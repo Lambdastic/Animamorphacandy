@@ -1,0 +1,23 @@
+Foods:
+  SomeFoodItemNameThatDoesntMatter:
+    ID: 322
+    ID_Data: 1
+    DisguiseTypes:
+      DONKEY:
+        Chance: 0.4
+        Duration: 500
+      RABBIT:
+        Chance: 0.2
+        Duration: 600
+      PIG:
+        Chance: 0.8
+        Duration: 300
+    Effects:
+      INCREASE_DAMAGE:
+        Chance: 0.2
+        Duration: 10
+        Amplifier: 1
+      REGENERATION:
+        Chance: 0.8
+        Duration: 5
+        Amplifier: 1
