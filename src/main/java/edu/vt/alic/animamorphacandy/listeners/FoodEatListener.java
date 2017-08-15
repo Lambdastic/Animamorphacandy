@@ -23,15 +23,6 @@ public class FoodEatListener implements Listener {
         this.plugin = plugin;
     }
 
-    /**
-     * Now keep in mind that this class looks weird like this with all the null checks for
-     * one reason, and that is because a player CAN get an effect but no disguise and
-     * vice versa. It's all on chance. The player does not have to get both.
-     * And if the player doesn't get an effect or disguise, then a message indicating that they
-     * ate the food is not fired because it's just like regular eating at that point.
-     *
-     * @param e
-     */
     @EventHandler(ignoreCancelled = true)
     public void onPlayerFoodEat(PlayerItemConsumeEvent e) {
         final Player p = e.getPlayer();
@@ -73,10 +64,5 @@ public class FoodEatListener implements Listener {
         }
 
         p.sendMessage("you ate the food and got some disguise or effects or both");
-        addParticleEffect(p);
-    }
-
-    private void addParticleEffect(Player p) {
-
     }
 }
