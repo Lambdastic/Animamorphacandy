@@ -10,7 +10,6 @@ import java.util.*;
 public class Food {
 
     private String name;
-
     private ItemStack itemStack;
 
     private HashMap<DisguiseType, Double> disguises;
@@ -27,9 +26,7 @@ public class Food {
     }
 
     public String getName() { return name; }
-    public ItemStack getItemStack() {
-        return itemStack;
-    }
+    public ItemStack getItemStack() { return itemStack; }
 
     public DisguiseType getRandomDisguiseType() {
         double random = new Random().nextDouble();
